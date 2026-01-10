@@ -1,0 +1,934 @@
+:root {
+  --black: #121212;
+  --white: #fff;
+  --brown: #bea69e;
+}
+
+body {
+  background-color: var(--black);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.14286;
+  letter-spacing: -0.04em;
+}
+
+.section-title-accent {
+  color: var(--brown);
+}
+
+/***** HEADER *****/
+.header {
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-box {
+  min-height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background-color: var(--black);
+}
+.header-logo {
+  display: block;
+}
+.header-logo-icon {
+  display: block;
+  fill: var(--white);
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-nav-item {
+  display: flex;
+}
+.header-nav-link {
+  font-size: 14px;
+  line-height: 1.286;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.header-nav-item:first-of-type .header-nav-link {
+  font-weight: 700;
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.header-camera-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #1d1d1d;
+}
+.header-camera-icon {
+  fill: #bea69e;
+  fill-opacity: 0.4;
+  transition: fill-opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-camera-btn:focus-visible .header-camera-icon {
+  fill-opacity: 1;
+}
+
+.header-burger {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin-left: 14px;
+  background-color: transparent;
+}
+.header-burger-icon {
+  stroke: var(--white);
+}
+.header-login {
+  display: none;
+}
+
+/***** HERO *****/
+
+.hero {
+  padding-top: 90px;
+  padding-bottom: 80px;
+  background-image: url(../images/page-hero-bg-small.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 150% 100%;
+}
+.hero-box {
+  padding: 40px 20px 0 20px;
+  border-radius: 30px;
+  background-color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+.hero-accent {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--brown);
+}
+.hero-text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+}
+.hero-meta {
+  margin-bottom: 31px;
+  display: flex;
+  align-items: flex-start;
+}
+.hero-students {
+  display: flex;
+  flex-direction: column;
+}
+.hero-avatars {
+  margin-bottom: 4px;
+  display: flex;
+}
+.hero-avatar {
+  margin-left: -12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #1d1d1d;
+}
+
+.hero-avatar:first-of-type {
+  margin: 0;
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-students-label {
+  display: flex;
+  align-items: center;
+}
+
+.hero-students-text {
+  max-width: 67px;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+}
+
+.hero-students-icon {
+  margin-left: 4px;
+  fill: var(--white);
+}
+.hero-reviews {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+.hero-star-box {
+  width: 44px;
+  height: 44px;
+  background-color: var(--brown);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-star-icon {
+  fill: none;
+  stroke: var(--black);
+}
+.hero-reviews-text {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-reviews-label {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 4px;
+}
+.hero-reviews-count {
+  font-weight: 500;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+}
+.hero-img {
+  margin: 0 auto;
+}
+
+/***** SLOGAN *****/
+
+.section-slogan {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.section-slogan-text {
+  font-size: 28px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--brown);
+  white-space: nowrap;
+}
+.section-slogan-accent {
+  color: var(--white);
+}
+
+/***** ABOUT *****/
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.about-title {
+  margin-bottom: 40px;
+}
+
+.about-media {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 209px;
+  border-radius: 1000px;
+  overflow: hidden;
+}
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+/***** COURSES *****/
+
+.courses {
+  padding: 40px 0;
+}
+
+.courses-wrapper-top {
+  margin-bottom: 40px;
+}
+
+.courses-title {
+  margin-bottom: 20px;
+}
+
+.courses-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+}
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.courses-card {
+  min-height: 398px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background-image: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  display: flex;
+}
+
+.courses-link {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.courses-card-top {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: flex-start;
+}
+.courses-index {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.4);
+}
+.courses-arrow {
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.courses-arrow-icon {
+  fill: none;
+  stroke: #777777;
+  transition: stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.courses-link:focus-visible .courses-arrow {
+  background-color: var(--brown);
+}
+
+.courses-link:focus-visible .courses-arrow-icon {
+  stroke: var(--white);
+}
+
+.courses-card-title {
+  max-width: 260px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.14286;
+  color: var(--white);
+}
+.courses-card-text {
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1279.98px) {
+  .header-menu {
+    padding: 20px 32px 0px 64px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 480px;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: var(--brown);
+    background-image: url(../images/digital-camera.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 110%;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu.is-open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .header-menu-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+    background-image: linear-gradient(
+      rgba(18, 18, 18, 0.4),
+      rgba(18, 18, 18, 0.4)
+    );
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu.is-open ~ .header-menu-overlay {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .header-close {
+    margin-left: auto;
+    margin-bottom: 172px;
+    display: block;
+    background-color: transparent;
+  }
+
+  .header-close-icon {
+    stroke: var(--black);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header-menu {
+    padding: 20px;
+    background-size: 150%;
+    width: 218px;
+  }
+
+  .header-close {
+    margin-bottom: 128px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 744px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    line-height: 1.125;
+  }
+
+  /***** HEADER *****/
+
+  .header-inner {
+    display: flex;
+  }
+
+  .header-box {
+    flex-grow: 1;
+    min-height: 60px;
+  }
+  .header-logo-icon {
+    width: 123px;
+    height: 16px;
+  }
+
+  .header-nav-list {
+    gap: 28px;
+  }
+
+  .header-camera-btn {
+    display: none;
+  }
+
+  .header-burger {
+    margin-left: 0;
+  }
+  .header-burger-icon {
+    width: 40px;
+    height: 28px;
+  }
+  .header-login {
+    margin-left: 14px;
+    display: block;
+    min-height: 60px;
+    min-width: 187px;
+    padding: 0 15px;
+    border-radius: 12px;
+    background-color: var(--white);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.55556;
+    text-transform: uppercase;
+    color: var(--black);
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-login:focus-visible {
+    background-color: #1d1d1d;
+    color: var(--brown);
+  }
+
+  /***** HERO *****/
+
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-size: 100% 100%;
+  }
+  .hero-box {
+    padding: 64px 32px 0 32px;
+  }
+
+  .hero-title {
+    max-width: 517px;
+    font-size: 60px;
+    line-height: 1.06667;
+  }
+
+  .hero-text {
+    max-width: 418px;
+  }
+  .hero-meta {
+    margin-bottom: 40px;
+  }
+  .hero-students {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero-avatars {
+    margin-bottom: 0;
+  }
+  .hero-avatar {
+    margin-left: -14px;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #1d1d1d;
+  }
+
+  .hero-students-label {
+    margin-left: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .hero-students-text {
+    max-width: 82px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .hero-students-icon {
+    margin-left: 0;
+  }
+
+  .hero-star-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hero-reviews-text {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-reviews-label {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+  .hero-reviews-count {
+    line-height: 1.25;
+  }
+  .hero-img {
+    position: relative;
+    bottom: -75px;
+    width: 393px;
+    height: auto;
+  }
+
+  /***** SLOGAN *****/
+
+  .section-slogan {
+    padding: 24px 0;
+  }
+
+  .section-slogan-text {
+    font-size: 40px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+
+  /***** ABOUT *****/
+
+  .about {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .about-title {
+    margin-bottom: 50px;
+  }
+
+  .about-media {
+    margin-bottom: 40px;
+    height: 340px;
+  }
+
+  .about-content {
+    max-width: 600px;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .about-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .about-text-left {
+    max-width: 280px;
+  }
+
+  /***** COURSES *****/
+
+  .courses {
+    padding: 50px 0;
+  }
+
+  .courses-wrapper-top {
+    margin-bottom: 50px;
+    display: flex;
+  }
+
+  .courses-title {
+    margin-bottom: 0px;
+  }
+
+  .courses-text {
+    margin-left: auto;
+    max-width: 381px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .courses-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .courses-card {
+    padding: 32px;
+    width: calc((100% - 20px) / 2);
+    min-height: 452px;
+  }
+
+  .courses-card-top {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .courses-card-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1120px;
+  }
+
+  /***** HEADER *****/
+
+  .header-box {
+    padding: 0 50px;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .header-close {
+    display: none;
+  }
+
+  .header-menu {
+    margin-left: auto;
+  }
+
+  .header-nav-list {
+    flex-direction: row;
+    gap: 28px;
+  }
+
+  .header-nav-link {
+    color: var(--white);
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nav-link:focus-visible {
+    color: var(--brown);
+  }
+
+  .header-nav-item:first-of-type .header-nav-link {
+    font-weight: inherit;
+  }
+
+  .header-login {
+    margin-left: 20px;
+    min-width: 239px;
+  }
+
+  /***** HERO *****/
+
+  .hero {
+    padding-top: 160px;
+    padding-bottom: 150px;
+    background-image: url(../images/page-hero-bg.svg);
+  }
+  .hero-box {
+    padding: 80px 50px 0;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .hero-content {
+    padding-bottom: 50px;
+  }
+
+  .hero-title {
+    max-width: 563px;
+    font-size: 64px;
+    line-height: 1.0625;
+  }
+
+  .hero-text {
+    margin-bottom: 136px;
+    max-width: 418px;
+  }
+
+  .hero-meta {
+    margin-bottom: 0px;
+  }
+
+  .hero-img {
+    margin-right: 0;
+    position: static;
+    width: 397px;
+  }
+
+  /***** SLOGAN *****/
+
+  .section-slogan-text {
+    font-size: 59px;
+    line-height: 1.08475;
+  }
+
+  /***** ABOUT *****/
+
+  .about {
+    padding-top: 150px;
+    padding-bottom: 75px;
+  }
+  .about-title {
+    margin-bottom: 50px;
+  }
+
+  .about-wrapper {
+    display: flex;
+  }
+
+  .about-media {
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    width: 488px;
+    height: 260px;
+  }
+
+  .about-content {
+    margin-left: 40px;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .about-text-left {
+    max-width: 268px;
+  }
+
+  /***** COURSES *****/
+
+  .courses {
+    padding: 75px 0;
+  }
+
+  .courses-text {
+    max-width: 405px;
+  }
+
+  .courses-card {
+    padding: 32px;
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  /***** HEADER *****/
+
+  .header-nav-list {
+    gap: 40px;
+  }
+
+  /***** HERO *****/
+
+  .hero-box {
+    padding: 80px 100px 0 50px;
+  }
+
+  /***** ABOUT *****/
+
+  .about-media {
+    width: 560px;
+    height: 240px;
+  }
+
+  .about-content {
+    margin-left: 50px;
+    gap: 40px;
+  }
+
+  .about-text-left {
+    max-width: 314px;
+  }
+
+  /***** COURSES *****/
+
+  .courses-text {
+    max-width: 565px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header-camera-btn:hover .header-camera-icon {
+    fill-opacity: 1;
+  }
+
+  .header-login:hover {
+    background-color: #1d1d1d;
+    color: var(--brown);
+  }
+
+  .header-nav-link:hover {
+    color: var(--brown);
+  }
+
+  .courses-link:hover .courses-arrow {
+    background-color: var(--brown);
+  }
+
+  .courses-link:hover .courses-arrow-icon {
+    stroke: var(--white);
+  }
+}
+
+@media (min-resolution: 2x) and (max-width: 1279.98px) {
+  .header-menu {
+    background-image: url(../images/digital-camera@2.jpg);
+  }
+}

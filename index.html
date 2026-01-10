@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus.Frame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <div class="header-box">
+          <a href="./index.html" class="header-logo">
+            <svg class="header-logo-icon" width="127" height="20">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <div class="header-menu">
+            <button class="header-close" type="button">
+              <svg class="header-close-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" class="header-nav-link">About us</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" class="header-nav-link">Our courses</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" class="header-nav-link">Our mentors</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" class="header-nav-link">Reviews</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" class="header-nav-link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-menu-overlay"></div>
+          <div class="header-actions">
+            <button type="button" class="header-camera-btn">
+              <svg class="header-camera-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-camera"></use>
+              </svg>
+            </button>
+            <button class="header-burger">
+              <svg class="header-burger-icon" width="32" height="22">
+                <use href="./images/icons.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button type="button" class="header-login">Sign up</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-box">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Discover the magic of
+                <span class="hero-accent">photography</span> in our school
+              </h1>
+              <p class="hero-text">
+                Our photography school offers an unforgettable journey, where
+                you can learn the basics of composition, master technical
+                skills, translate your unique ideas.
+              </p>
+              <div class="hero-meta">
+                <div class="hero-students">
+                  <ul class="hero-avatars">
+                    <li class="hero-avatar">
+                      <img
+                        srcset="
+                          ./images/student-avatar-1.png   1x,
+                          ./images/student-avatar-1@2.png 2x
+                        "
+                        src="./images/student-avatar-1.png"
+                        alt=""
+                        class="hero-avatar-img"
+                      />
+                    </li>
+                    <li class="hero-avatar">
+                      <img
+                        srcset="
+                          ./images/student-avatar-2.png   1x,
+                          ./images/student-avatar-2@2.png 2x
+                        "
+                        src="./images/student-avatar-2.png"
+                        alt=""
+                        class="hero-avatar-img"
+                      />
+                    </li>
+                    <li class="hero-avatar">
+                      <img
+                        srcset="
+                          ./images/student-avatar-3.png   1x,
+                          ./images/student-avatar-3@2.png 2x
+                        "
+                        src="./images/student-avatar-3.png"
+                        alt=""
+                        class="hero-avatar-img"
+                      />
+                    </li>
+                  </ul>
+                  <p class="hero-students-label">
+                    <span class="hero-students-text">Our happy students</span>
+                    <svg class="hero-students-icon" width="18" height="8.66">
+                      <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="hero-reviews">
+                  <div class="hero-star-box">
+                    <svg class="hero-star-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </div>
+                  <p class="hero-reviews-text">
+                    <span class="hero-reviews-label">Reviews</span
+                    ><span class="hero-reviews-count">+1500</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              srcset="
+                ./images/hero-photographer.png   1x,
+                ./images/hero-photographer@2.png 2x
+              "
+              src="./images/hero-photographer.png"
+              alt="Photographer holding a camera"
+              class="hero-img"
+              width="259"
+              height="314"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-slogan">
+        <p class="section-slogan-text">
+          Master
+          <span class="section-slogan-accent">your photography</span> skills
+          with us!
+        </p>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="section-title about-title">
+            About <span class="section-title-accent">Us</span>
+          </h2>
+          <div class="about-wrapper">
+            <div class="about-media">
+              <img
+                srcset="
+                  ./images/digital-camera.jpg   1x,
+                  ./images/digital-camera@2.jpg 2x
+                "
+                src="./images/digital-camera.jpg"
+                alt="Camera"
+                class="about-img"
+              />
+            </div>
+            <div class="about-content">
+              <p class="about-text about-text-left">
+                Our photography school is designed to teach you everything you
+                need to know about this magical art. Regardless of your
+                experience or skill level, we offer a wide range of courses to
+                suit your needs and interests. Our teaching team consists of
+                experienced photographers who have many years of experience in
+                this field. They strive not only to share their knowledge, but
+                also to inspire you to develop and express your unique
+                creativity.
+              </p>
+              <p class="about-text">
+                Our courses cover a wide range of topics, from the basics of
+                photography and equipment use to professional image processing
+                and creating impressive compositions. You will have the
+                opportunity to learn the technical aspects of photography,
+                discover your own style and develop your own visual language.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="courses">
+        <div class="container">
+          <div class="courses-wrapper-top">
+            <h2 class="section-title courses-title">
+              Our <span class="section-title-accent">Courses</span>
+            </h2>
+            <p class="courses-text">
+              At our photography school, we offer a variety of courses that
+              cover all aspects of this fascinating art. Regardless of your
+              experience or skill level, we have courses to suit your needs and
+              goals.
+            </p>
+          </div>
+          <ul class="courses-list">
+            <li class="courses-card">
+              <a href="#" class="courses-link">
+                <div class="courses-card-top">
+                  <span class="courses-index">01</span>
+                  <div class="courses-arrow">
+                    <svg class="courses-arrow-icon" width="20" height="20">
+                      <use
+                        href="./images/icons.svg#icon-arrow-narrow-up-right"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="courses-card-title">Basics of photography</h3>
+                <p class="courses-card-text">
+                  During this course, you will be able to familiarize yourself
+                  with different types of cameras, learn the basics of
+                  composition.
+                </p>
+              </a>
+            </li>
+            <li class="courses-card">
+              <a href="#" class="courses-link">
+                <div class="courses-card-top">
+                  <span class="courses-index">02</span>
+                  <div class="courses-arrow">
+                    <svg class="courses-arrow-icon" width="20" height="20">
+                      <use
+                        href="./images/icons.svg#icon-arrow-narrow-up-right"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="courses-card-title">Landscape photography</h3>
+                <p class="courses-card-text">
+                  In this course, you'll learn how to choose the right angles,
+                  frame landscapes, and create depth and perspective in your
+                  images.
+                </p>
+              </a>
+            </li>
+            <li class="courses-card">
+              <a href="#" class="courses-link">
+                <div class="courses-card-top">
+                  <span class="courses-index">03</span>
+                  <div class="courses-arrow">
+                    <svg class="courses-arrow-icon" width="20" height="20">
+                      <use
+                        href="./images/icons.svg#icon-arrow-narrow-up-right"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="courses-card-title">Portrait photography</h3>
+                <p class="courses-card-text">
+                  During this course, you will learn to choose the right
+                  lighting, reproduce the mood and expressions on the faces of
+                  the models.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
