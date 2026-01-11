@@ -29,7 +29,7 @@
             </svg>
           </a>
           <div class="header-menu">
-            <button class="header-close" type="button">
+            <button class="header-close" type="button" aria-label="Close menu">
               <svg class="header-close-icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-cross"></use>
               </svg>
@@ -56,12 +56,16 @@
           </div>
           <div class="header-menu-overlay"></div>
           <div class="header-actions">
-            <button type="button" class="header-camera-btn">
+            <button
+              type="button"
+              class="header-camera-btn"
+              aria-label="Sign up"
+            >
               <svg class="header-camera-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-camera"></use>
               </svg>
             </button>
-            <button class="header-burger">
+            <button class="header-burger" aria-label="Open menu">
               <svg class="header-burger-icon" width="32" height="22">
                 <use href="./images/icons.svg#icon-burger"></use>
               </svg>
@@ -275,6 +279,75 @@
                   the models.
                 </p>
               </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="mentors">
+        <div class="container">
+          <h2 class="section-title mentors-title">
+            Our <span class="section-title-accent">Mentors</span>
+          </h2>
+          <ul class="mentors-list">
+            <li class="mentors-item">
+              <div class="mentors-avatar">
+                <img
+                  srcset="
+                    ./images/emilia-smith.png   1x,
+                    ./images/emilia-smith@2.png 2x
+                  "
+                  src="./images/emilia-smith.png"
+                  alt="Emilia Smith"
+                  class="mentors-img"
+                />
+              </div>
+              <h3 class="mentors-name">Emilia Smith</h3>
+              <p class="mentors-experience">1.5 years of experience</p>
+            </li>
+            <li class="mentors-item">
+              <div class="mentors-avatar">
+                <img
+                  srcset="
+                    ./images/alex-lebedev.png   1x,
+                    ./images/alex-lebedev@2.png 2x
+                  "
+                  src="./images/alex-lebedev.png"
+                  alt="Alex Lebedev"
+                  class="mentors-img"
+                />
+              </div>
+              <h3 class="mentors-name">Alex Lebedev</h3>
+              <p class="mentors-experience">3.5 years of experience</p>
+            </li>
+            <li class="mentors-item">
+              <div class="mentors-avatar">
+                <img
+                  srcset="
+                    ./images/mia-dubrovska.png   1x,
+                    ./images/mia-dubrovska@2.png 2x
+                  "
+                  src="./images/mia-dubrovska.png"
+                  alt="Mia Dubrovska"
+                  class="mentors-img"
+                />
+              </div>
+              <h3 class="mentors-name">Mia Dubrovska</h3>
+              <p class="mentors-experience">2.0 years of experience</p>
+            </li>
+            <li class="mentors-item">
+              <div class="mentors-avatar">
+                <img
+                  srcset="
+                    ./images/eliot-kovalev.png   1x,
+                    ./images/eliot-kovalev@2.png 2x
+                  "
+                  src="./images/eliot-kovalev.png"
+                  alt="Eliot Kovalev"
+                  class="mentors-img"
+                />
+              </div>
+              <h3 class="mentors-name">Eliot Kovalev</h3>
+              <p class="mentors-experience">4.0 years of experience</p>
             </li>
           </ul>
         </div>
