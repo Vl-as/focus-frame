@@ -451,6 +451,94 @@ button {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/***** SIGNUP *****/
+
+.signup {
+  padding: 40px 0;
+}
+
+.signup-title {
+  margin-bottom: 20px;
+}
+
+.signup-text {
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
+}
+
+.signup-fields {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.signup-input {
+  padding: 0 18px;
+  height: 46px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background-color: transparent;
+  outline: transparent;
+  color: var(--white);
+  transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signup-textarea {
+  padding: 14px 18px;
+  height: 112px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background-color: transparent;
+  outline: transparent;
+  color: var(--white);
+  resize: none;
+  transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signup-input:focus-visible,
+.signup-textarea:focus-visible {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.signup-btn {
+  margin-bottom: 20px;
+  padding: 0 15px;
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  border-radius: 12px;
+  background-color: var(--white);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signup-btn:focus-visible {
+  background-color: #1d1d1d;
+  color: var(--brown);
+}
+
+.signup-policy {
+  font-size: 12px;
+  line-height: 1.33333;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: -0.02em;
+}
+.signup-policy-link {
+  color: inherit;
+  text-decoration: underline;
+}
+.signup-media {
+  display: none;
+}
+
 @media (max-width: 1279.98px) {
   .header-menu {
     padding: 20px 32px 0px 64px;
@@ -780,6 +868,44 @@ button {
     font-size: 14px;
     line-height: 1.28571;
   }
+
+  /***** SIGNUP *****/
+
+  .signup {
+    padding: 50px 0;
+  }
+
+  .signup-content {
+    max-width: 480px;
+  }
+
+  .signup-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .signup-fields {
+    gap: 14px;
+  }
+  .signup-input {
+    height: 60px;
+  }
+
+  .signup-textarea {
+    padding: 20px 18px;
+    height: 120px;
+  }
+  .signup-btn {
+    min-height: 60px;
+
+    font-size: 18px;
+    line-height: 1.55556;
+  }
+
+  .signup-policy {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -924,6 +1050,58 @@ button {
   .mentors {
     padding: 75px 0;
   }
+
+  /***** SIGNUP *****/
+
+  .signup {
+    padding: 75px 0;
+  }
+
+  .signup-media {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+  }
+
+  .signup-inner {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .signup-lens {
+    height: 288px;
+    width: 180px;
+    border-radius: 1000px;
+    background-color: var(--brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signup-lens-img {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(-25px 10px 20px rgba(0, 0, 0, 0.4))
+      drop-shadow(-36px 18px 25px rgba(0, 0, 0, 0.26));
+  }
+
+  .signup-camera {
+    position: relative;
+    border-radius: 1000px;
+    width: 340px;
+    height: 540px;
+    background-color: #1d1d1d;
+  }
+
+  .signup-camera-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 88px;
+    width: 240px;
+    height: auto;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -964,6 +1142,24 @@ button {
   .courses-text {
     max-width: 565px;
   }
+
+  /***** SIGNUP *****/
+
+  .signup-lens {
+    width: 190px;
+  }
+
+  .signup-lens-img {
+    width: 163px;
+  }
+
+  .signup-camera {
+    width: 350px;
+  }
+
+  .signup-camera-img {
+    width: 254px;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -986,6 +1182,16 @@ button {
 
   .courses-link:hover .courses-arrow-icon {
     stroke: var(--white);
+  }
+
+  .signup-input:hover,
+  .signup-textarea:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .signup-btn:hover {
+    background-color: #1d1d1d;
+    color: var(--brown);
   }
 }
 
