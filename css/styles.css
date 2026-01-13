@@ -539,6 +539,70 @@ button {
   display: none;
 }
 
+/***** REVIEWS *****/
+
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.reviews-title {
+  margin-bottom: 40px;
+}
+
+.reviews-item:not(:first-of-type) {
+  display: none;
+}
+.reviews-card {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  max-width: 335px;
+}
+.reviews-card-header {
+  margin-bottom: 20px;
+}
+.reviews-card-author {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.review-card-img {
+  object-fit: cover;
+}
+.reviews-card-meta {
+  margin-left: 10px;
+}
+.reviews-card-name {
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.reviews-card-role {
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.reviews-card-rating {
+  margin-left: 66px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.reviews-card-star {
+  fill: #414141;
+  stroke: #414141;
+}
+.reviews-card-star-active {
+  fill: var(--brown);
+  stroke: var(--brown);
+}
+.reviews-card-text {
+  letter-spacing: -0.02em;
+}
+
 @media (max-width: 1279.98px) {
   .header-menu {
     padding: 20px 32px 0px 64px;
@@ -906,6 +970,55 @@ button {
     font-size: 14px;
     line-height: 1.28571;
   }
+
+  /***** REVIEWS *****/
+
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .reviews-title {
+    margin-bottom: 50px;
+  }
+
+  .reviews-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews-card {
+    max-width: 640px;
+  }
+
+  .reviews-card-header {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .reviews-card-author {
+    margin-bottom: 0;
+  }
+
+  .reviews-card-name {
+    line-height: 1.4;
+  }
+  .reviews-card-role {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+  .reviews-card-rating {
+    margin-left: auto;
+  }
+  .reviews-card-star {
+    width: 20px;
+    height: 20px;
+  }
+
+  .reviews-card-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1101,6 +1214,60 @@ button {
     bottom: 88px;
     width: 240px;
     height: auto;
+  }
+
+  /***** REVIEWS *****/
+
+  .reviews {
+    padding-top: 75px;
+    padding-bottom: 150px;
+  }
+
+  .reviews-list {
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .reviews-item:not(:first-of-type) {
+    display: block;
+  }
+
+  .reviews-item {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .reviews-card {
+    height: 100%;
+  }
+
+  .reviews-card-header {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .reviews-card-author {
+    margin-bottom: 0;
+  }
+
+  .reviews-card-name {
+    line-height: 1.4;
+  }
+  .reviews-card-role {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+  .reviews-card-rating {
+    margin-left: auto;
+  }
+  .reviews-card-star {
+    width: 20px;
+    height: 20px;
+  }
+
+  .reviews-card-text {
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
