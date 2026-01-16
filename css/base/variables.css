@@ -1,0 +1,15 @@
+:root {
+  --black: #121212;
+  --white: #fff;
+  --brown: #bea69e;
+
+  --color-surface-secondary: #1d1d1d;
+  --color-neutral-40: rgba(255, 255, 255, 0.4);
+  --color-neutral-50: rgba(255, 255, 255, 0.5);
+  --color-neutral-60: #414141;
+  --color-neutral-medium: #777777;
+  --color-neutral-deep: #060707;
+  --color-border-subtle: rgba(255, 255, 255, 0.2);
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}

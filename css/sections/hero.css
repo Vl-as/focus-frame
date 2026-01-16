@@ -1,0 +1,233 @@
+.hero {
+  padding-top: 90px;
+  padding-bottom: 80px;
+  background-image: url(../../images/page-bg-small.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 133% 100%;
+}
+.hero-box {
+  padding: 40px 20px 0 20px;
+  border-radius: 30px;
+  background-color: var(--color-surface-secondary);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+.hero-accent {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--brown);
+}
+.hero-text {
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
+}
+.hero-meta {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+.hero-students {
+  display: flex;
+  flex-direction: column;
+}
+.hero-avatars {
+  margin-bottom: 4px;
+  display: flex;
+}
+.hero-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-surface-secondary);
+}
+
+.hero-avatar:not(:first-child) {
+  margin-left: -12px;
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-students-label {
+  display: flex;
+  align-items: center;
+}
+
+.hero-students-text {
+  max-width: 67px;
+  letter-spacing: -0.04em;
+}
+
+.hero-students-icon {
+  margin-left: 4px;
+  fill: var(--white);
+}
+.hero-reviews {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+.hero-star-box {
+  width: 44px;
+  height: 44px;
+  background-color: var(--brown);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-star-icon {
+  fill: none;
+  stroke: var(--black);
+}
+.hero-reviews-text {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-reviews-label {
+  letter-spacing: -0.04em;
+  color: var(--color-neutral-50);
+  margin-bottom: 4px;
+}
+.hero-reviews-count {
+  font-weight: 500;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+}
+.hero-img {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-size: cover;
+  }
+
+  .hero-box {
+    padding: 64px 32px 0 32px;
+  }
+
+  .hero-title {
+    max-width: 517px;
+    font-size: 60px;
+    line-height: 1.06667;
+  }
+
+  .hero-text {
+    max-width: 418px;
+  }
+  .hero-meta {
+    margin-bottom: 40px;
+  }
+  .hero-students {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero-avatars {
+    margin-bottom: 0;
+  }
+  .hero-avatar {
+    width: 54px;
+    height: 54px;
+    border-width: 3px;
+  }
+
+  .hero-avatar:not(:first-child) {
+    margin-left: -14px;
+  }
+
+  .hero-students-label {
+    margin-left: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .hero-students-text {
+    max-width: 82px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .hero-students-icon {
+    margin-left: 0;
+  }
+
+  .hero-star-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hero-reviews-label {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+  .hero-reviews-count {
+    line-height: 1.25;
+  }
+  .hero-img {
+    transform: translateY(75px);
+    width: 393px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    padding-top: 160px;
+    padding-bottom: 150px;
+    background-image: url(../../images/page-bg.svg);
+  }
+  .hero-box {
+    padding: 80px 50px 0;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .hero-content {
+    padding-bottom: 50px;
+  }
+
+  .hero-title {
+    max-width: 563px;
+    font-size: 64px;
+    line-height: 1.0625;
+  }
+
+  .hero-text {
+    margin-bottom: 135px;
+  }
+
+  .hero-meta {
+    margin-bottom: 0px;
+  }
+
+  .hero-img {
+    transform: translateY(0);
+    margin-right: 0;
+    width: 397px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-box {
+    padding: 80px 100px 0 50px;
+  }
+}

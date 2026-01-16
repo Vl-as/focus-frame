@@ -1,0 +1,16 @@
+/* ================= BASE ================= */
+@import url(./base/variables.css);
+@import url(./base/base.css);
+
+/* ================= LAYOUT =============== */
+@import url(./layout/header.css);
+@import url(./layout/footer.css);
+
+/* ================= SECTIONS ============= */
+@import url(./sections/hero.css);
+@import url(./sections/slogan.css);
+@import url(./sections/about.css);
+@import url(./sections/courses.css);
+@import url(./sections/mentors.css);
+@import url(./sections/signup.css);
+@import url(./sections/reviews.css);

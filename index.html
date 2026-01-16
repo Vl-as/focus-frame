@@ -17,18 +17,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/mobile-menu.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container header-inner">
         <div class="header-box">
-          <a href="./index.html" class="header-logo">
-            <svg class="header-logo-icon" width="127" height="20">
-              <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
+          <a href="./index.html" class="logo">
+            <img
+              srcset="./images/logo.png 1x, ./images/logo@2.png 2x"
+              src="./images/logo.png"
+              alt="Focus Frame logo"
+              class="logo-img"
+              width="123"
+              height="16"
+            />
           </a>
-          <div class="header-menu">
+          <div class="header-menu" id="mobile-menu">
             <button class="header-close" type="button" aria-label="Close menu">
               <svg class="header-close-icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-cross"></use>
@@ -72,7 +78,7 @@
             </button>
           </div>
         </div>
-        <button type="button" class="header-login">Sign up</button>
+        <button type="button" class="btn header-login">Sign up</button>
       </div>
     </header>
     <main>
@@ -185,7 +191,7 @@
               />
             </div>
             <div class="about-content">
-              <p class="about-text about-text-left">
+              <p class="about-text about-text-primary">
                 Our photography school is designed to teach you everything you
                 need to know about this magical art. Regardless of your
                 experience or skill level, we offer a wide range of courses to
@@ -221,64 +227,60 @@
           </div>
           <ul class="courses-list">
             <li class="courses-card">
-              <a href="#" class="courses-link">
-                <div class="courses-card-top">
-                  <span class="courses-index">01</span>
-                  <div class="courses-arrow">
-                    <svg class="courses-arrow-icon" width="20" height="20">
-                      <use
-                        href="./images/icons.svg#icon-arrow-narrow-up-right"
-                      ></use>
-                    </svg>
-                  </div>
+              <a href="#" class="courses-link"></a>
+              <div class="courses-card-top">
+                <span class="courses-index">01</span>
+                <div class="courses-arrow">
+                  <svg class="courses-arrow-icon" width="20" height="20">
+                    <use
+                      href="./images/icons.svg#icon-arrow-narrow-up-right"
+                    ></use>
+                  </svg>
                 </div>
-                <h3 class="courses-card-title">Basics of photography</h3>
-                <p class="courses-card-text">
-                  During this course, you will be able to familiarize yourself
-                  with different types of cameras, learn the basics of
-                  composition.
-                </p>
-              </a>
+              </div>
+              <h3 class="courses-card-title">Basics of photography</h3>
+              <p class="courses-card-text">
+                During this course, you will be able to familiarize yourself
+                with different types of cameras, learn the basics of
+                composition.
+              </p>
             </li>
             <li class="courses-card">
-              <a href="#" class="courses-link">
-                <div class="courses-card-top">
-                  <span class="courses-index">02</span>
-                  <div class="courses-arrow">
-                    <svg class="courses-arrow-icon" width="20" height="20">
-                      <use
-                        href="./images/icons.svg#icon-arrow-narrow-up-right"
-                      ></use>
-                    </svg>
-                  </div>
+              <a href="#" class="courses-link"></a>
+              <div class="courses-card-top">
+                <span class="courses-index">02</span>
+                <div class="courses-arrow">
+                  <svg class="courses-arrow-icon" width="20" height="20">
+                    <use
+                      href="./images/icons.svg#icon-arrow-narrow-up-right"
+                    ></use>
+                  </svg>
                 </div>
-                <h3 class="courses-card-title">Landscape photography</h3>
-                <p class="courses-card-text">
-                  In this course, you'll learn how to choose the right angles,
-                  frame landscapes, and create depth and perspective in your
-                  images.
-                </p>
-              </a>
+              </div>
+              <h3 class="courses-card-title">Landscape photography</h3>
+              <p class="courses-card-text">
+                In this course, you'll learn how to choose the right angles,
+                frame landscapes, and create depth and perspective in your
+                images.
+              </p>
             </li>
             <li class="courses-card">
-              <a href="#" class="courses-link">
-                <div class="courses-card-top">
-                  <span class="courses-index">03</span>
-                  <div class="courses-arrow">
-                    <svg class="courses-arrow-icon" width="20" height="20">
-                      <use
-                        href="./images/icons.svg#icon-arrow-narrow-up-right"
-                      ></use>
-                    </svg>
-                  </div>
+              <a href="#" class="courses-link"></a>
+              <div class="courses-card-top">
+                <span class="courses-index">03</span>
+                <div class="courses-arrow">
+                  <svg class="courses-arrow-icon" width="20" height="20">
+                    <use
+                      href="./images/icons.svg#icon-arrow-narrow-up-right"
+                    ></use>
+                  </svg>
                 </div>
-                <h3 class="courses-card-title">Portrait photography</h3>
-                <p class="courses-card-text">
-                  During this course, you will learn to choose the right
-                  lighting, reproduce the mood and expressions on the faces of
-                  the models.
-                </p>
-              </a>
+              </div>
+              <h3 class="courses-card-title">Portrait photography</h3>
+              <p class="courses-card-text">
+                During this course, you will learn to choose the right lighting,
+                reproduce the mood and expressions on the faces of the models.
+              </p>
             </li>
           </ul>
         </div>
@@ -289,7 +291,7 @@
             Our <span class="section-title-accent">Mentors</span>
           </h2>
           <ul class="mentors-list">
-            <li class="mentors-item">
+            <li>
               <div class="mentors-avatar">
                 <img
                   srcset="
@@ -304,7 +306,7 @@
               <h3 class="mentors-name">Emilia Smith</h3>
               <p class="mentors-experience">1.5 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li>
               <div class="mentors-avatar">
                 <img
                   srcset="
@@ -319,7 +321,7 @@
               <h3 class="mentors-name">Alex Lebedev</h3>
               <p class="mentors-experience">3.5 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li>
               <div class="mentors-avatar">
                 <img
                   srcset="
@@ -334,7 +336,7 @@
               <h3 class="mentors-name">Mia Dubrovska</h3>
               <p class="mentors-experience">2.0 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li>
               <div class="mentors-avatar">
                 <img
                   srcset="
@@ -365,28 +367,32 @@
             <form action="#" class="signup-form">
               <div class="signup-fields">
                 <input
+                  id="name"
                   name="name"
                   type="text"
                   class="signup-input"
                   placeholder="Enter your name"
+                  aria-label="Name"
                 />
                 <input
                   name="email"
                   type="email"
                   class="signup-input"
                   placeholder="Enter your email"
+                  aria-label="Email"
                 />
                 <textarea
                   name="message"
                   class="signup-textarea"
                   placeholder="Message"
+                  aria-label="Message"
                 ></textarea>
               </div>
-              <button type="submit" class="signup-btn">Send</button>
+              <button type="submit" class="btn signup-btn">Send</button>
               <p class="signup-policy">
-                By clicking on “Send” button, you agree to our
+                By clicking the “Send” button, you agree to our
                 <a href="#" class="signup-policy-link">Privacy Policy</a>, and
-                allow Promodo to use this information for marketing purposes.
+                consent to the processing of your personal data.
               </p>
             </form>
           </div>
@@ -395,7 +401,7 @@
               <img
                 srcset="./images/lens.png 1x, ./images/lens@2.png 2x"
                 src="./images/lens.png"
-                alt=""
+                alt="Camera lens"
                 aria-hidden="true"
                 class="signup-lens-img"
               />
@@ -407,7 +413,7 @@
                   ./images/video-camera@2.png 2x
                 "
                 src="./images/video-camera.png"
-                alt=""
+                alt="Camera with microphone"
                 aria-hidden="true"
                 class="signup-camera-img"
               />
@@ -419,135 +425,210 @@
         <div class="container">
           <h2 class="section-title reviews-title">Reviews</h2>
           <ul class="reviews-list">
-            <li class="reviews-item">
-              <article class="reviews-card">
-                <div class="reviews-card-header">
-                  <div class="reviews-card-author">
-                    <img
-                      srcset="
-                        ./images/abraham-baker.png   1x,
-                        ./images/abraham-baker@2.png 2x
-                      "
-                      src="./images/abraham-baker.png"
-                      alt="Abraham Baker"
-                      class="review-card-img"
-                      width="56"
-                      height="56"
-                    />
-                    <div class="reviews-card-meta">
-                      <p class="reviews-card-name">Abraham Baker</p>
-                      <p class="reviews-card-role">Student</p>
-                    </div>
-                  </div>
-                  <div class="reviews-card-rating">
-                    <svg
-                      class="reviews-card-star reviews-card-star-active"
-                      width="16"
-                      height="16"
-                    >
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
-                    <svg
-                      class="reviews-card-star reviews-card-star-active"
-                      width="16"
-                      height="16"
-                    >
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
-                    <svg
-                      class="reviews-card-star reviews-card-star-active"
-                      width="16"
-                      height="16"
-                    >
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
-                    <svg
-                      class="reviews-card-star reviews-card-star-active"
-                      width="16"
-                      height="16"
-                    >
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
-                    <svg class="reviews-card-star" width="16" height="16">
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
+            <li class="reviews-card">
+              <div class="reviews-card-header">
+                <div class="reviews-card-author">
+                  <img
+                    srcset="
+                      ./images/abraham-baker.png   1x,
+                      ./images/abraham-baker@2.png 2x
+                    "
+                    src="./images/abraham-baker.png"
+                    alt="Abraham Baker"
+                    class="reviews-card-img"
+                    width="56"
+                    height="56"
+                  />
+                  <div class="reviews-card-meta">
+                    <p class="reviews-card-name">Abraham Baker</p>
+                    <p class="reviews-card-role">Student</p>
                   </div>
                 </div>
-                <p class="reviews-card-text">
-                  I am very pleased that I decided to enroll in photography
-                  school. The teachers turned out to be very talented and
-                  experienced professionals who share their knowledge and are
-                  dedicated to their work. I was able to expand my skills and
-                  discover my own style.
-                </p>
-              </article>
+                <div class="reviews-card-rating">
+                  <svg
+                    class="reviews-card-star reviews-card-star-active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="reviews-card-star reviews-card-star-active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="reviews-card-star reviews-card-star-active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="reviews-card-star reviews-card-star-active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg class="reviews-card-star" width="16" height="16">
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="reviews-card-text">
+                I am very pleased that I decided to enroll in photography
+                school. The teachers turned out to be very talented and
+                experienced professionals who share their knowledge and are
+                dedicated to their work. I was able to expand my skills and
+                discover my own style.
+              </p>
             </li>
-            <li class="reviews-item">
-              <article class="reviews-card">
-                <div class="reviews-card-header">
-                  <div class="reviews-card-author">
-                    <img
-                      srcset="
-                        ./images/amanda-lowery.png   1x,
-                        ./images/amanda-lowery@2.png 2x
-                      "
-                      src="./images/amanda-lowery.png"
-                      alt=""
-                      class="review-card-img"
-                      width="56"
-                      height="56"
-                    />
-                    <div class="reviews-card-meta">
-                      <p class="reviews-card-name">Amanda Lowery</p>
-                      <p class="reviews-card-role">Student</p>
-                    </div>
-                  </div>
-                  <div class="reviews-card-rating">
-                    <svg
-                      class="reviews-card-star reviews-card-star-active"
-                      width="16"
-                      height="16"
-                    >
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
-                    <svg
-                      class="reviews-card-star reviews-card-star-active"
-                      width="16"
-                      height="16"
-                    >
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
-                    <svg
-                      class="reviews-card-star reviews-card-star-active"
-                      width="16"
-                      height="16"
-                    >
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
-                    <svg
-                      class="reviews-card-star reviews-card-star-active"
-                      width="16"
-                      height="16"
-                    >
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
-                    <svg class="reviews-card-star" width="16" height="16">
-                      <use href="./images/icons.svg#icon-star"></use>
-                    </svg>
+            <li class="reviews-card">
+              <div class="reviews-card-header">
+                <div class="reviews-card-author">
+                  <img
+                    srcset="
+                      ./images/amanda-lowery.png   1x,
+                      ./images/amanda-lowery@2.png 2x
+                    "
+                    src="./images/amanda-lowery.png"
+                    alt="Amanda Lowery"
+                    class="reviews-card-img"
+                    width="56"
+                    height="56"
+                  />
+                  <div class="reviews-card-meta">
+                    <p class="reviews-card-name">Amanda Lowery</p>
+                    <p class="reviews-card-role">Student</p>
                   </div>
                 </div>
-                <p class="reviews-card-text">
-                  The courses at the photography school exceeded all my
-                  expectations. I gained not only technical knowledge, but also
-                  inspiration and motivation to reach new heights in my
-                  creativity. Hands-on classes and workshops helped me
-                  understand different styles of photography.
-                </p>
-              </article>
+                <div class="reviews-card-rating">
+                  <svg
+                    class="reviews-card-star reviews-card-star-active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="reviews-card-star reviews-card-star-active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="reviews-card-star reviews-card-star-active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="reviews-card-star reviews-card-star-active"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg class="reviews-card-star" width="16" height="16">
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="reviews-card-text">
+                The courses at the photography school exceeded all my
+                expectations. I gained not only technical knowledge, but also
+                inspiration and motivation to reach new heights in my
+                creativity. Hands-on classes and workshops helped me understand
+                different styles of photography.
+              </p>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="./index.html" class="logo footer-logo">
+              <img
+                srcset="./images/logo.png 1x, ./images/logo@2.png 2x"
+                src="./images/logo.png"
+                alt="Focus Frame logo"
+                class="logo-img"
+                width="123"
+                height="16"
+              />
+            </a>
+            <address class="footer-contacts">
+              <a href="tel:+380665438912" class="footer-tel"
+                >+38 066 543 8912</a
+              >
+              <a
+                href="https://www.google.com/maps?q=1675+S+Pioneer+Road+Salt+Lake+City+UT+84104"
+                target="_blank"
+                class="footer-address"
+                rel="noopener noreferrer"
+              >
+                1678 S. Pioneer Road Salt Lake City UT 84104
+              </a>
+            </address>
+          </div>
+          <nav class="footer-nav">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Instagram</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Facebook</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Youtube</a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">About us</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Our courses</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Our mentors</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Reviews</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-input"
+              name="email"
+              placeholder="Enter your email"
+              required
+              aria-label="Email address"
+            />
+            <button type="submit" class="btn footer-btn">Go</button>
+          </form>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-legal">
+            <a href="#" class="footer-policy">Privacy Policy </a
+            ><a href="#" class="footer-policy">Public Offering Agreement</a>
+          </div>
+          <p class="footer-copyright">2024 Focus Frame © All rights reserved</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

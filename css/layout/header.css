@@ -1,0 +1,267 @@
+.header {
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-box {
+  min-height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 12px;
+  background-color: var(--black);
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-nav-link {
+  line-height: 1.286;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.header-nav-item:first-of-type .header-nav-link {
+  font-weight: 700;
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.header-camera-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: var(--color-surface-secondary);
+}
+.header-camera-icon {
+  fill: var(--brown);
+  fill-opacity: 0.4;
+  transition: fill-opacity 0.3s var(--ease-standard);
+}
+
+.header-camera-btn:focus-visible .header-camera-icon {
+  fill-opacity: 1;
+}
+
+.header-burger {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin-left: 14px;
+  background-color: transparent;
+}
+.header-burger-icon {
+  stroke: var(--white);
+}
+.header-login {
+  display: none;
+}
+
+@media (max-width: 1279.98px) {
+  .header-menu {
+    padding: 20px 32px 0px 64px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 480px;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: var(--brown);
+    background-image: url(../../images/digital-camera.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 110%;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms var(--ease-standard),
+      visibility 250ms var(--ease-standard),
+      transform 250ms var(--ease-standard);
+  }
+
+  .header-menu.is-open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .header-menu-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+    background-image: linear-gradient(
+      rgba(18, 18, 18, 0.4),
+      rgba(18, 18, 18, 0.4)
+    );
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms var(--ease-standard),
+      visibility 250ms var(--ease-standard);
+  }
+
+  .header-menu.is-open ~ .header-menu-overlay {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .header-close {
+    margin-left: auto;
+    margin-bottom: 172px;
+    display: block;
+    background-color: transparent;
+  }
+
+  .header-close-icon {
+    stroke: var(--black);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header-menu {
+    padding: 20px;
+    background-size: 150%;
+    width: 218px;
+  }
+
+  .header-close {
+    margin-bottom: 128px;
+  }
+}
+
+@media (min-width: 768px) {
+  /***** HEADER *****/
+
+  .header-inner {
+    display: flex;
+  }
+
+  .header-box {
+    flex-grow: 1;
+    min-height: 60px;
+  }
+
+  .header-nav-list {
+    gap: 28px;
+  }
+
+  .header-camera-btn {
+    display: none;
+  }
+
+  .header-burger {
+    margin-left: 0;
+  }
+  .header-burger-icon {
+    width: 40px;
+    height: 28px;
+  }
+  .header-login {
+    display: block;
+    margin-left: 14px;
+    min-height: 60px;
+    min-width: 187px;
+    background-color: var(--white);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.55556;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  .header-login:focus-visible {
+    background-color: var(--color-surface-secondary);
+    color: var(--brown);
+  }
+}
+
+@media (min-width: 1280px) {
+  /***** HEADER *****/
+
+  .header-box {
+    padding: 0 50px;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .header-close {
+    display: none;
+  }
+
+  .header-menu {
+    margin-left: auto;
+  }
+
+  .header-nav-list {
+    flex-direction: row;
+    gap: 28px;
+  }
+
+  .header-nav-link {
+    color: var(--white);
+    transition: color 0.3s var(--ease-standard);
+  }
+
+  .header-nav-link:focus-visible {
+    color: var(--brown);
+  }
+
+  .header-nav-item:first-of-type .header-nav-link {
+    font-weight: inherit;
+  }
+
+  .header-login {
+    margin-left: 20px;
+    min-width: 239px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-nav-list {
+    gap: 40px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header-camera-btn:hover .header-camera-icon {
+    fill-opacity: 1;
+  }
+
+  .header-login:hover {
+    background-color: var(--color-surface-secondary);
+    color: var(--brown);
+  }
+
+  .header-nav-link:hover {
+    color: var(--brown);
+  }
+}
+
+@media (min-resolution: 2x) and (max-width: 1279.98px) {
+  .header-menu {
+    background-image: url(../../images/digital-camera@2.jpg);
+  }
+}

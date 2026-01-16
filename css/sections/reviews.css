@@ -1,0 +1,131 @@
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.reviews-title {
+  margin-bottom: 40px;
+}
+
+.reviews-card:not(:first-of-type) {
+  display: none;
+}
+.reviews-card {
+  padding: 20px;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 12px;
+  max-width: 335px;
+}
+.reviews-card-header {
+  margin-bottom: 20px;
+}
+.reviews-card-author {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.reviews-card-img {
+  object-fit: cover;
+}
+.reviews-card-meta {
+  margin-left: 10px;
+}
+.reviews-card-name {
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.reviews-card-role {
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  color: var(--color-neutral-50);
+}
+.reviews-card-rating {
+  margin-left: 66px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.reviews-card-star {
+  fill: var(--color-neutral-60);
+  stroke: var(--color-neutral-60);
+}
+.reviews-card-star-active {
+  fill: var(--brown);
+  stroke: var(--brown);
+}
+.reviews-card-text {
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .reviews-title {
+    margin-bottom: 50px;
+  }
+
+  .reviews-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews-card {
+    max-width: 640px;
+  }
+
+  .reviews-card-header {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .reviews-card-author {
+    margin-bottom: 0;
+  }
+
+  .reviews-card-name {
+    line-height: 1.4;
+  }
+  .reviews-card-role {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+  .reviews-card-rating {
+    margin-left: auto;
+  }
+  .reviews-card-star {
+    width: 20px;
+    height: 20px;
+  }
+
+  .reviews-card-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews {
+    padding-top: 75px;
+    padding-bottom: 150px;
+  }
+
+  .reviews-list {
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .reviews-card:not(:first-of-type) {
+    display: block;
+  }
+
+  .reviews-card {
+    width: calc((100% - 20px) / 2);
+  }
+}
