@@ -80,7 +80,7 @@
     right: 0;
     z-index: 999;
     width: 480px;
-    height: 100vh;
+    height: 100dvh;
     transform: translateX(100%);
     background-color: var(--brown);
     background-image: url(../../images/digital-camera.jpg);
@@ -135,6 +135,12 @@
   .header-close-icon {
     stroke: var(--black);
   }
+
+  .header-nav-link {
+    background-color: var(--brown);
+    border-radius: 12px;
+    padding: 0 3px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -146,6 +152,12 @@
 
   .header-close {
     margin-bottom: 128px;
+  }
+}
+
+@media (max-width: 1279.98px) and (orientation: landscape) {
+  .header-close {
+    margin-bottom: 20px;
   }
 }
 
