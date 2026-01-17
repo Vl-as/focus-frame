@@ -36,6 +36,10 @@ button {
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--black);
   font-family: 'DM Sans', sans-serif;
