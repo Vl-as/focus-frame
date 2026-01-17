@@ -43,34 +43,30 @@
             <nav class="header-nav">
               <ul class="header-nav-list">
                 <li class="header-nav-item">
-                  <a href="#" class="header-nav-link">About us</a>
+                  <a href="#about" class="header-nav-link">About us</a>
                 </li>
                 <li class="header-nav-item">
-                  <a href="#" class="header-nav-link">Our courses</a>
+                  <a href="#courses" class="header-nav-link">Our courses</a>
                 </li>
                 <li class="header-nav-item">
-                  <a href="#" class="header-nav-link">Our mentors</a>
+                  <a href="#mentors" class="header-nav-link">Our mentors</a>
                 </li>
                 <li class="header-nav-item">
-                  <a href="#" class="header-nav-link">Reviews</a>
+                  <a href="#reviews" class="header-nav-link">Reviews</a>
                 </li>
                 <li class="header-nav-item">
-                  <a href="#" class="header-nav-link">Contacts</a>
+                  <a href="#contacts" class="header-nav-link">Contacts</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="header-menu-overlay"></div>
           <div class="header-actions">
-            <button
-              type="button"
-              class="header-camera-btn"
-              aria-label="Sign up"
-            >
+            <a href="#signup" class="header-camera-btn" aria-label="Sign up">
               <svg class="header-camera-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-camera"></use>
               </svg>
-            </button>
+            </a>
             <button class="header-burger" aria-label="Open menu">
               <svg class="header-burger-icon" width="32" height="22">
                 <use href="./images/icons.svg#icon-burger"></use>
@@ -78,7 +74,7 @@
             </button>
           </div>
         </div>
-        <button type="button" class="btn header-login">Sign up</button>
+        <a href="#signup" class="btn header-login">Sign up</a>
       </div>
     </header>
     <main>
@@ -173,7 +169,7 @@
           with us!
         </p>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <h2 class="section-title about-title">
             About <span class="section-title-accent">Us</span>
@@ -188,6 +184,7 @@
                 src="./images/digital-camera.jpg"
                 alt="Camera"
                 class="about-img"
+                loading="lazy"
               />
             </div>
             <div class="about-content">
@@ -212,7 +209,7 @@
           </div>
         </div>
       </section>
-      <section class="courses">
+      <section class="courses" id="courses">
         <div class="container">
           <div class="courses-wrapper-top">
             <h2 class="section-title courses-title">
@@ -285,7 +282,7 @@
           </ul>
         </div>
       </section>
-      <section class="mentors">
+      <section class="mentors" id="mentors">
         <div class="container">
           <h2 class="section-title mentors-title">
             Our <span class="section-title-accent">Mentors</span>
@@ -301,6 +298,7 @@
                   src="./images/emilia-smith.png"
                   alt="Emilia Smith"
                   class="mentors-img"
+                  loading="lazy"
                 />
               </div>
               <h3 class="mentors-name">Emilia Smith</h3>
@@ -316,6 +314,7 @@
                   src="./images/alex-lebedev.png"
                   alt="Alex Lebedev"
                   class="mentors-img"
+                  loading="lazy"
                 />
               </div>
               <h3 class="mentors-name">Alex Lebedev</h3>
@@ -331,6 +330,7 @@
                   src="./images/mia-dubrovska.png"
                   alt="Mia Dubrovska"
                   class="mentors-img"
+                  loading="lazy"
                 />
               </div>
               <h3 class="mentors-name">Mia Dubrovska</h3>
@@ -346,6 +346,7 @@
                   src="./images/eliot-kovalev.png"
                   alt="Eliot Kovalev"
                   class="mentors-img"
+                  loading="lazy"
                 />
               </div>
               <h3 class="mentors-name">Eliot Kovalev</h3>
@@ -354,7 +355,7 @@
           </ul>
         </div>
       </section>
-      <section class="signup">
+      <section class="signup" id="signup">
         <div class="container signup-inner">
           <div class="signup-content">
             <h2 class="section-title signup-title">
@@ -401,9 +402,10 @@
               <img
                 srcset="./images/lens.png 1x, ./images/lens@2.png 2x"
                 src="./images/lens.png"
-                alt="Camera lens"
+                alt=""
                 aria-hidden="true"
                 class="signup-lens-img"
+                loading="lazy"
               />
             </div>
             <div class="signup-camera">
@@ -413,15 +415,16 @@
                   ./images/video-camera@2.png 2x
                 "
                 src="./images/video-camera.png"
-                alt="Camera with microphone"
+                alt=""
                 aria-hidden="true"
                 class="signup-camera-img"
+                loading="lazy"
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="section-title reviews-title">Reviews</h2>
           <ul class="reviews-list">
@@ -438,6 +441,7 @@
                     class="reviews-card-img"
                     width="56"
                     height="56"
+                    loading="lazy"
                   />
                   <div class="reviews-card-meta">
                     <p class="reviews-card-name">Abraham Baker</p>
@@ -499,6 +503,7 @@
                     class="reviews-card-img"
                     width="56"
                     height="56"
+                    loading="lazy"
                   />
                   <div class="reviews-card-meta">
                     <p class="reviews-card-name">Amanda Lowery</p>
@@ -563,9 +568,10 @@
                 class="logo-img"
                 width="123"
                 height="16"
+                loading="lazy"
               />
             </a>
-            <address class="footer-contacts">
+            <address class="footer-contacts" id="contacts">
               <a href="tel:+380665438912" class="footer-tel"
                 >+38 066 543 8912</a
               >
@@ -582,30 +588,45 @@
           <nav class="footer-nav">
             <ul class="footer-list">
               <li class="footer-item">
-                <a href="#" class="footer-link">Instagram</a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="footer-link"
+                  >Instagram</a
+                >
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Facebook</a>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="footer-link"
+                  >Facebook</a
+                >
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Youtube</a>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  class="footer-link"
+                  >Youtube</a
+                >
               </li>
             </ul>
             <ul class="footer-list">
               <li class="footer-item">
-                <a href="#" class="footer-link">About us</a>
+                <a href="#about" class="footer-link">About us</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Our courses</a>
+                <a href="#courses" class="footer-link">Our courses</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Our mentors</a>
+                <a href="#mentors" class="footer-link">Our mentors</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Reviews</a>
+                <a href="#reviews" class="footer-link">Reviews</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Contacts</a>
+                <a href="#contacts" class="footer-link">Contacts</a>
               </li>
             </ul>
           </nav>

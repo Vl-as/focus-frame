@@ -55,6 +55,9 @@ body {
 }
 
 .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 15px;
   border-radius: 12px;
   transition: background-color 0.3s var(--ease-standard),

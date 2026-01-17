@@ -177,7 +177,7 @@
     height: 28px;
   }
   .header-login {
-    display: block;
+    display: inline-flex;
     margin-left: 14px;
     min-height: 60px;
     min-width: 187px;
