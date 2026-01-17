@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/mobile-menu.js" defer></script>
   </head>
@@ -82,17 +83,21 @@
         <div class="container">
           <div class="hero-box">
             <div class="hero-content">
-              <h1 class="hero-title">
+              <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
                 Discover the magic of
                 <span class="hero-accent">photography</span> in our school
               </h1>
-              <p class="hero-text">
+              <p class="hero-text" data-aos="fade-up" data-aos-delay="250">
                 Our photography school offers an unforgettable journey, where
                 you can learn the basics of composition, master technical
                 skills, translate your unique ideas.
               </p>
               <div class="hero-meta">
-                <div class="hero-students">
+                <div
+                  class="hero-students"
+                  data-aos="fade-left"
+                  data-aos-delay="150"
+                >
                   <ul class="hero-avatars">
                     <li class="hero-avatar">
                       <img
@@ -135,7 +140,11 @@
                     </svg>
                   </p>
                 </div>
-                <div class="hero-reviews">
+                <div
+                  class="hero-reviews"
+                  data-aos="fade-left"
+                  data-aos-delay="150"
+                >
                   <div class="hero-star-box">
                     <svg class="hero-star-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-star"></use>
@@ -158,12 +167,19 @@
               class="hero-img"
               width="259"
               height="314"
+              data-aos="fade-up"
+              data-aos-duration="800"
             />
           </div>
         </div>
       </section>
       <section class="section-slogan">
-        <p class="section-slogan-text">
+        <p
+          class="section-slogan-text"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800"
+        >
           Master
           <span class="section-slogan-accent">your photography</span> skills
           with us!
@@ -175,7 +191,7 @@
             About <span class="section-title-accent">Us</span>
           </h2>
           <div class="about-wrapper">
-            <div class="about-media">
+            <div class="about-media" data-aos="fade-right">
               <img
                 srcset="
                   ./images/digital-camera.jpg   1x,
@@ -187,7 +203,7 @@
                 loading="lazy"
               />
             </div>
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-left">
               <p class="about-text about-text-primary">
                 Our photography school is designed to teach you everything you
                 need to know about this magical art. Regardless of your
@@ -223,7 +239,7 @@
             </p>
           </div>
           <ul class="courses-list">
-            <li class="courses-card">
+            <li class="courses-card" data-aos="fade-up">
               <a href="#" class="courses-link"></a>
               <div class="courses-card-top">
                 <span class="courses-index">01</span>
@@ -242,7 +258,7 @@
                 composition.
               </p>
             </li>
-            <li class="courses-card">
+            <li class="courses-card" data-aos="fade-up" data-aos-delay="100">
               <a href="#" class="courses-link"></a>
               <div class="courses-card-top">
                 <span class="courses-index">02</span>
@@ -261,7 +277,7 @@
                 images.
               </p>
             </li>
-            <li class="courses-card">
+            <li class="courses-card" data-aos="fade-up" data-aos-delay="200">
               <a href="#" class="courses-link"></a>
               <div class="courses-card-top">
                 <span class="courses-index">03</span>
@@ -288,7 +304,7 @@
             Our <span class="section-title-accent">Mentors</span>
           </h2>
           <ul class="mentors-list">
-            <li>
+            <li data-aos="fade-up">
               <div class="mentors-avatar">
                 <img
                   srcset="
@@ -304,7 +320,7 @@
               <h3 class="mentors-name">Emilia Smith</h3>
               <p class="mentors-experience">1.5 years of experience</p>
             </li>
-            <li>
+            <li data-aos="fade-up">
               <div class="mentors-avatar">
                 <img
                   srcset="
@@ -320,7 +336,7 @@
               <h3 class="mentors-name">Alex Lebedev</h3>
               <p class="mentors-experience">3.5 years of experience</p>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="100">
               <div class="mentors-avatar">
                 <img
                   srcset="
@@ -336,7 +352,7 @@
               <h3 class="mentors-name">Mia Dubrovska</h3>
               <p class="mentors-experience">2.0 years of experience</p>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="100">
               <div class="mentors-avatar">
                 <img
                   srcset="
@@ -365,7 +381,12 @@
               Please use the form below to contact us. Enter your name, email,
               and message and we'll get back to you shortly.
             </p>
-            <form action="#" class="signup-form">
+            <form
+              action="#"
+              class="signup-form"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
               <div class="signup-fields">
                 <input
                   id="name"
@@ -428,7 +449,7 @@
         <div class="container" id="reviews">
           <h2 class="section-title reviews-title">Reviews</h2>
           <ul class="reviews-list">
-            <li class="reviews-card">
+            <li class="reviews-card" data-aos="fade-up">
               <div class="reviews-card-header">
                 <div class="reviews-card-author">
                   <img
@@ -490,7 +511,7 @@
                 discover my own style.
               </p>
             </li>
-            <li class="reviews-card">
+            <li class="reviews-card" data-aos="fade-up">
               <div class="reviews-card-header">
                 <div class="reviews-card-author">
                   <img
@@ -556,7 +577,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade">
       <div class="container">
         <div class="footer-top">
           <div class="footer-brand">
@@ -630,7 +651,7 @@
               </li>
             </ul>
           </nav>
-          <form class="footer-form">
+          <form class="footer-form" data-aos="fade-up" data-aos-delay="150">
             <input
               type="email"
               class="footer-input"
@@ -651,5 +672,14 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 100,
+      });
+    </script>
   </body>
 </html>
