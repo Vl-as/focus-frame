@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -388,32 +388,35 @@
               and message and we'll get back to you shortly.
             </p>
             <form
-              action="#"
               class="signup-form"
               data-aos="fade-up"
               data-aos-duration="600"
             >
               <div class="signup-fields">
+                <label class="visually-hidden" for="name">Name</label>
                 <input
                   id="name"
                   name="name"
                   type="text"
                   class="signup-input"
                   placeholder="Enter your name"
-                  aria-label="Name"
+                  required
                 />
+                <label class="visually-hidden" for="email">Email</label>
                 <input
+                  id="email"
                   name="email"
                   type="email"
                   class="signup-input"
                   placeholder="Enter your email"
-                  aria-label="Email"
+                  required
                 />
+                <label class="visually-hidden" for="message">Message</label>
                 <textarea
+                  id="message"
                   name="message"
                   class="signup-textarea"
                   placeholder="Message"
-                  aria-label="Message"
                 ></textarea>
               </div>
               <button type="submit" class="btn signup-btn">Send</button>
@@ -658,13 +661,14 @@
             </ul>
           </nav>
           <form class="footer-form" data-aos="fade-up" data-aos-delay="150">
+            <label class="visually-hidden" for="email-footer">Email</label>
             <input
+              id="email-footer"
               type="email"
               class="footer-input"
               name="email"
               placeholder="Enter your email"
               required
-              aria-label="Email address"
             />
             <button type="submit" class="btn footer-btn">Go</button>
           </form>

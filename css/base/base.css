@@ -48,6 +48,20 @@ body {
   line-height: 1.28571;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 375px;
   margin: 0 auto;
@@ -64,7 +78,8 @@ body {
   align-items: center;
   padding: 0 15px;
   border-radius: 12px;
-  transition: background-color 0.3s var(--ease-standard),
+  transition:
+    background-color 0.3s var(--ease-standard),
     color 0.3s var(--ease-standard);
 }
 

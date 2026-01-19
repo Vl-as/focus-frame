@@ -91,7 +91,8 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms var(--ease-standard),
+    transition:
+      opacity 250ms var(--ease-standard),
       visibility 250ms var(--ease-standard),
       transform 250ms var(--ease-standard);
   }
@@ -115,7 +116,8 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms var(--ease-standard),
+    transition:
+      opacity 250ms var(--ease-standard),
       visibility 250ms var(--ease-standard);
   }
 
@@ -139,7 +141,7 @@
   .header-nav-link {
     background-color: var(--brown);
     border-radius: 12px;
-    padding: 0 3px;
+    padding: 6px 8px;
   }
 }
 
